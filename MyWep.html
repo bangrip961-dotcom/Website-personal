@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Arif Rachman Afriantoro - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#37314b",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "on-surface-variant": "#c7c4d7",
+                        "on-error": "#690005",
+                        "inverse-on-surface": "#332c47",
+                        "on-tertiary": "#003640",
+                        "on-surface": "#ffffff",
+                        "glass-border": "rgba(255, 255, 255, 0.1)",
+                        "surface-container-lowest": "#100a23",
+                        "on-surface-muted": "#94a3b8",
+                        "on-secondary-container": "#d6a9ff",
+                        "background": "#150f28",
+                        "primary": "#c0c1ff",
+                        "on-tertiary-fixed-variant": "#004e5c",
+                        "secondary-container": "#6f00be",
+                        "surface-tint": "#c0c1ff",
+                        "on-secondary": "#490080",
+                        "surface-bright": "#3c3550",
+                        "surface-container-low": "#1e1831",
+                        "error-container": "#93000a",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "surface": "#150f28",
+                        "inverse-primary": "#494bd6",
+                        "primary-glow": "rgba(99, 102, 241, 0.35)",
+                        "inverse-surface": "#e8ddff",
+                        "on-secondary-fixed-variant": "#6900b3",
+                        "surface-dim": "#150f28",
+                        "tertiary": "#4cd7f6",
+                        "on-primary": "#1000a9",
+                        "primary-container": "#8083ff",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#2c0051",
+                        "surface-container-high": "#2c2640",
+                        "tertiary-fixed": "#acedff",
+                        "on-primary-container": "#0d0096",
+                        "surface-container-highest": "#37314b",
+                        "on-tertiary-container": "#002f38",
+                        "on-primary-fixed": "#07006c",
+                        "outline-variant": "#464554",
+                        "secondary-fixed": "#f0dbff",
+                        "primary-fixed": "#e1e0ff",
+                        "surface-container": "#221c35",
+                        "outline": "#908fa0",
+                        "on-background": "#e8ddff",
+                        "on-error-container": "#ffdad6",
+                        "surface-card": "rgba(15, 23, 42, 0.85)",
+                        "tertiary-fixed-dim": "#4cd7f6",
+                        "on-tertiary-fixed": "#001f26",
+                        "secondary": "#ddb7ff",
+                        "secondary-fixed-dim": "#ddb7ff",
+                        "tertiary-container": "#009eb9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "xl": "32px",
+                        "2xl": "48px",
+                        "md": "16px",
+                        "unit": "4px",
+                        "gutter-mobile": "20px",
+                        "xs": "4px",
+                        "lg": "24px",
+                        "gutter-desktop": "10%",
+                        "section-gap": "96px",
+                        "3xl": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Poppins"],
+                        "title-md": ["Poppins"],
+                        "body-base": ["Poppins"],
+                        "headline-lg": ["Poppins"],
+                        "headline-md": ["Poppins"],
+                        "label-caps": ["Poppins"],
+                        "display-2xl-mobile": ["Poppins"],
+                        "display-2xl": ["Poppins"],
+                        "caption": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.7", "letterSpacing": "0", "fontWeight": "300" }],
+                        "title-md": ["18px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-base": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.25", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.3", "letterSpacing": "0.08em", "fontWeight": "600" }],
+                        "display-2xl-mobile": ["44px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-2xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #030014;
+            color: #ffffff;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .blueprint-bg {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(128px);
+            z-index: 0;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .glow-orb-primary {
+            background-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .glow-orb-secondary {
+            background-color: rgba(111, 0, 190, 0.3);
+        }
+
+        .glass-card {
+            background-color: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+            border-color: rgba(192, 193, 255, 0.5);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #c0c1ff, #ddb7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #494bd6, #6f00be);
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            filter: blur(10px);
+            z-index: -1;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-primary:hover::before {
+            opacity: 1;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border: 1px solid #c0c1ff;
+            transition: all 0.3s ease;
+        }
+
+        .btn-ghost:hover {
+            background: rgba(192, 193, 255, 0.1);
+        }
+
+        /* Preloader / Splash Screen */
+        #preloader {
+            transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+            will-change: transform;
+        }
+
+        #preloader.preloader-hide {
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+
+<body class="blueprint-bg relative font-body-base text-on-surface" data-mode="connect">
+    <!-- Preloader / Splash Screen -->
+    <div aria-hidden="true" class="fixed inset-0 z-[9999] bg-black flex items-center justify-center" id="preloader">
+        <p class="flex items-center gap-sm text-3xl md:text-5xl font-light tracking-wide text-white">
+            <span class="text-primary animate-pulse" id="preloader-dot">•</span>
+            <span id="preloader-greeting">Hello</span>
+        </p>
+    </div>
+    <script>
+            (function () {
+                var htmlEl = document.documentElement;
+                var bodyEl = document.body;
+                var preloader = document.getElementById('preloader');
+                var greetingEl = document.getElementById('preloader-greeting');
+                var greetings = ['Hello', 'こんにちは', '你好', 'Привет', 'Bonjour', 'Hallo'];
+                var index = 0;
+
+                // Kunci scroll selama preloader aktif
+                htmlEl.classList.add('overflow-hidden');
+                bodyEl.classList.add('overflow-hidden');
+
+                var cycle = setInterval(function () {
+                    index++;
+                    if (index < greetings.length) {
+                        greetingEl.textContent = greetings[index];
+                        return;
+                    }
+                    // Kata terakhir ('Halo') sudah tampil, hentikan interval
+                    clearInterval(cycle);
+                    // Beri jeda sedikit sebelum slide up
+                    setTimeout(function () {
+                        preloader.classList.add('preloader-hide');
+                    }, 500);
+                }, 500);
+
+                // Setelah transisi slide-up selesai: sembunyikan preloader & kembalikan scroll
+                preloader.addEventListener('transitionend', function () {
+                    preloader.style.display = 'none';
+                    htmlEl.classList.remove('overflow-hidden');
+                    bodyEl.classList.remove('overflow-hidden');
+                });
+            })();
+    </script>
+    <!-- Ambient Glow Orbs -->
+    <div class="glow-orb glow-orb-primary w-[600px] h-[600px] top-[-200px] left-[-200px]"></div>
+    <div class="glow-orb glow-orb-secondary w-[500px] h-[500px] top-[40%] right-[-150px]"></div>
+    <div class="glow-orb glow-orb-primary w-[400px] h-[400px] bottom-[-100px] left-[20%]"></div>
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-glass-border shadow-2xl transition-all duration-300"
+        id="navbar">
+        <div class="flex justify-between items-center px-gutter-desktop h-20 max-w-7xl mx-auto">
+            <a class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface"
+                data-i18n="full_name" href="#">Arif Rachman Afriantoro</a>
+            <div class="hidden md:flex gap-lg">
+                <a class="font-title-md text-title-md hover:text-primary transition-colors duration-300 active:scale-95 transition-transform text-on-surface-variant font-medium"
+                    data-i18n="nav_home" href="#home">Home</a>
+                <a class="font-title-md text-title-md hover:text-primary transition-colors duration-300 active:scale-95 transition-transform text-on-surface-variant font-medium"
+                    data-i18n="nav_about" href="#about">About</a>
+                <a class="font-title-md text-title-md hover:text-primary transition-colors duration-300 active:scale-95 transition-transform text-on-surface-variant font-medium"
+                    data-i18n="nav_skills" href="#skills">Skills</a>
+                <a class="text-on-surface-variant font-medium font-title-md text-title-md hover:text-primary transition-colors duration-300 active:scale-95 transition-transform"
+                    data-i18n="nav_experience" href="#experience">Experience</a>
+                <a class="text-on-surface-variant font-medium font-title-md text-title-md hover:text-primary transition-colors duration-300 active:scale-95 transition-transform"
+                    data-i18n="nav_education" href="#education">Education</a>
+                <a class="font-title-md text-title-md hover:text-primary transition-colors duration-300 active:scale-95 transition-transform text-primary font-bold border-b-2 border-primary pb-1"
+                    data-i18n="nav_awards" href="#awards">Awards</a>
+            </div>
+            <div class="hidden md:inline-flex items-center gap-sm">
+                <!-- Language Switcher -->
+                <div class="relative" id="lang-switcher">
+                    <button aria-expanded="false" aria-haspopup="true"
+                        class="flex items-center gap-xs px-md py-sm rounded-full btn-ghost font-title-md text-title-md text-primary"
+                        id="lang-btn" type="button">
+                        <span class="material-symbols-outlined text-lg"
+                            style="font-variation-settings: 'FILL' 0;">language</span>
+                        <span id="lang-btn-label">ID</span>
+                        <span class="material-symbols-outlined text-base transition-transform duration-300"
+                            id="lang-chevron" style="font-variation-settings: 'FILL' 0;">expand_more</span>
+                    </button>
+                    <div class="hidden absolute right-0 mt-sm w-48 glass-card rounded-lg overflow-hidden shadow-2xl z-50 py-xs"
+                        id="lang-menu">
+                        <button
+                            class="w-full text-left px-md py-sm font-body-base text-body-base text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors"
+                            data-lang="id" type="button">Bahasa Indonesia</button>
+                        <button
+                            class="w-full text-left px-md py-sm font-body-base text-body-base text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors"
+                            data-lang="en" type="button">English</button>
+                        <button
+                            class="w-full text-left px-md py-sm font-body-base text-body-base text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-colors"
+                            data-lang="jp" type="button">日本語</button>
+                    </div>
+                </div>
+            </div>
+            <button class="md:hidden text-on-surface focus:outline-none">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Main Content Canvas -->
+    <main
+        class="max-w-7xl mx-auto px-gutter-desktop pt-[120px] pb-section-gap relative z-10 flex flex-col gap-section-gap">
+        <!-- Hero Section -->
+        <section class="min-h-[707px] flex flex-col md:flex-row items-center justify-center gap-2xl"
+            data-stitch-vh="min-h-[707px]===min-h-[80vh]" id="home">
+            <div class="flex-1 space-y-md text-center md:text-left z-10">
+                <h1
+                    class="font-display-2xl-mobile md:font-display-2xl text-display-2xl-mobile md:text-display-2xl text-on-surface font-bold tracking-tight">
+                    <span class="block" data-i18n="hero_greeting">Hello, I'm</span>
+                    <span class="text-gradient" data-i18n="full_name">Arif Rachman Afriantoro</span>
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto md:mx-0"><br /></p>
+                <div class="pt-md flex flex-wrap gap-md justify-center md:justify-start">
+                    <a class="btn-primary px-lg py-sm rounded-full font-title-md text-title-md text-on-surface inline-flex items-center gap-sm"
+                        href="#contact">
+                        <span class="" data-i18n="hero_cta_primary">Get In Touch</span>
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+                    </a>
+                    <a class="btn-ghost px-lg py-sm rounded-full font-title-md text-title-md text-primary inline-flex items-center gap-sm"
+                        href="#about">
+                        <span class="" data-i18n="hero_cta_secondary">Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center md:justify-end relative">
+                <div class="absolute inset-0 bg-primary-glow blur-3xl rounded-full scale-150 -z-10"></div>
+                <div
+                    class="relative w-64 h-64 md:w-96 md:h-96 rounded-2xl overflow-hidden glass-card p-xs transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <img alt="Profile Photo of Arif Rachman Afriantoro"
+                        class="w-full h-full object-cover rounded-xl filter grayscale contrast-125 hover:grayscale-0 transition-all duration-500"
+                        src="pp.jpeg" />
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section class="scroll-mt-[120px]" id="about">
+            <div class="flex flex-col gap-lg items-center text-center mb-xl">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-on-surface" data-i18n="about_title">
+                    Latar Belakang</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+            </div>
+            <div class="glass-card rounded-2xl p-xl md:p-3xl max-w-4xl mx-auto" data-aos="fade-up">
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed text-center"
+                    data-i18n="about_text">
+                    Seorang siswa SMK yang memiliki ketertarikan besar pada dunia teknologi digital, dan inovasi
+                    teknologi. Saya senang mengeksplorasi bagaimana teknologi dapat diterapkan untuk menyelesaikan
+                    masalah nyata dan menciptakan solusi yang bermanfaat. Saat ini, saya terus belajar dan mengembangkan
+                    diri di bidang programer dan dunia digital secasra lebih luas.
+                </p>
+            </div>
+        </section>
+        <!-- Skills & Expertise Section -->
+        <section class="scroll-mt-[120px]" id="skills">
+            <div class="flex flex-col gap-lg items-center text-center mb-xl">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-on-surface" data-i18n="skills_title">
+                    Skills &amp; Expertise</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+                <!-- Softskills -->
+                <div class="glass-card rounded-2xl p-xl flex flex-col gap-md" data-aos="fade-up">
+                    <div class="flex items-center gap-sm mb-sm border-b border-glass-border pb-sm">
+                        <span class="material-symbols-outlined text-primary text-3xl"
+                            style="font-variation-settings: 'FILL' 1;">psychology</span>
+                        <h3 class="font-headline-md text-headline-md font-bold text-on-surface"
+                            data-i18n="softskills_title">Softskills</h3>
+                    </div>
+                    <ul class="space-y-sm font-body-base text-body-base text-on-surface-variant">
+                        <li class="flex items-center gap-sm"><span
+                                class="material-symbols-outlined text-tertiary text-sm">check_circle</span> <span
+                                data-i18n="softskill_1">Komunikasi</span></li>
+                        <li class="flex items-center gap-sm"><span
+                                class="material-symbols-outlined text-tertiary text-sm">check_circle</span> <span
+                                data-i18n="softskill_2">Team Work</span></li>
+                        <li class="flex items-center gap-sm"><span
+                                class="material-symbols-outlined text-tertiary text-sm">check_circle</span> <span
+                                data-i18n="softskill_3">Manajemen Waktu</span></li>
+                        <li class="flex items-center gap-sm"><span
+                                class="material-symbols-outlined text-tertiary text-sm">check_circle</span> <span
+                                data-i18n="softskill_4">Problem Solving</span></li>
+                    </ul>
+                </div>
+                <!-- Keahlian -->
+                <div class="glass-card rounded-2xl p-xl flex flex-col gap-md" data-aos="fade-up">
+                    <div class="flex items-center gap-sm mb-sm border-b border-glass-border pb-sm">
+                        <span class="material-symbols-outlined text-primary text-3xl"
+                            style="font-variation-settings: 'FILL' 1;">code</span>
+                        <h3 class="font-headline-md text-headline-md font-bold text-on-surface"
+                            data-i18n="hardskills_title">Keahlian</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-sm">
+                        <div
+                            class="bg-surface-container p-sm rounded-lg flex items-center justify-center gap-xs border border-glass-border hover:border-primary transition-colors">
+                            <span class="font-label-caps text-label-caps text-on-surface">HTML</span>
+                        </div>
+                        <div
+                            class="bg-surface-container p-sm rounded-lg flex items-center justify-center gap-xs border border-glass-border hover:border-primary transition-colors">
+                            <span class="font-label-caps text-label-caps text-on-surface">Android Studio</span>
+                        </div>
+                        <div
+                            class="bg-surface-container p-sm rounded-lg flex items-center justify-center gap-xs border border-glass-border hover:border-primary transition-colors">
+                            <span class="font-label-caps text-label-caps text-on-surface">Canva</span>
+                        </div>
+                        <div
+                            class="bg-surface-container p-sm rounded-lg flex items-center justify-center gap-xs border border-glass-border hover:border-primary transition-colors">
+                            <span class="font-label-caps text-label-caps text-on-surface"
+                                data-i18n="skill_graphic_design">Desain Grafis</span>
+                        </div>
+                        <div
+                            class="bg-surface-container p-sm rounded-lg flex items-center justify-center gap-xs border border-glass-border hover:border-primary transition-colors col-span-2">
+                            <span class="font-label-caps text-label-caps text-on-surface">Microsoft Office
+                                (Word,Excel)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education Section -->
+        <section class="scroll-mt-[120px]" id="education">
+            <div class="flex items-center justify-center gap-sm mb-xl">
+                <span class="material-symbols-outlined text-primary text-4xl"
+                    style="font-variation-settings: 'FILL' 1;">school</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-on-surface text-center"
+                    data-i18n="education_title">Riwayat Pendidikan</h2>
+            </div>
+            <div
+                class="max-w-4xl mx-auto relative border-l-2 border-primary/50 pl-xl ml-sm md:ml-auto md:pl-0 md:border-l-0 space-y-xl before:hidden md:before:block before:absolute before:inset-0 before:ml-[50%] before:-translate-x-px md:before:w-[2px] md:before:bg-gradient-to-b before:from-primary before:to-secondary">
+                <!-- Edu Item 1 -->
+                <div class="relative flex md:justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12 hidden md:block"></div>
+                    <div
+                        class="z-20 flex items-center order-1 bg-primary shadow-xl w-6 h-6 rounded-full absolute -left-[35px] md:relative md:left-auto md:mx-auto ring-4 ring-background">
+                    </div>
+                    <div class="order-1 glass-card rounded-xl p-md md:w-5/12 w-full text-left md:text-left"
+                        data-aos="fade-up">
+                        <h3 class="font-title-md text-title-md font-bold text-primary" data-i18n="edu_vocational">
+                            Sekolah Menengah Kejuruan</h3>
+                        <p class="font-body-base text-body-base text-on-surface mt-xs">SMK TI KARTIKA CENDEKIA PURWOREJO
+                        </p>
+                        <p class="font-caption text-caption text-on-surface-muted mt-xs">2023 - 2026</p>
+                    </div>
+                </div>
+                <!-- Edu Item 2 -->
+                <div class="relative flex md:justify-between items-center w-full left-timeline">
+                    <div class="order-1 glass-card rounded-xl p-md md:w-5/12 w-full text-left md:text-right opacity-80"
+                        data-aos="fade-up">
+                        <h3 class="font-title-md text-title-md font-bold text-on-surface" data-i18n="edu_junior_high">
+                            Sekolah Menengah Pertama</h3>
+                        <p class="font-body-base text-body-base text-on-surface mt-xs">SMP 24 PURWOREJO</p>
+                        <p class="font-caption text-caption text-on-surface-muted mt-xs">2020 - 2023</p>
+                    </div>
+                    <div
+                        class="z-20 flex items-center order-1 bg-surface-variant border-2 border-glass-border shadow-xl w-6 h-6 rounded-full absolute -left-[35px] md:relative md:left-auto md:mx-auto ring-4 ring-background">
+                    </div>
+                    <div class="order-1 w-5/12 hidden md:block"></div>
+                </div>
+                <!-- Edu Item 3 -->
+                <div class="relative flex md:justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12 hidden md:block"></div>
+                    <div
+                        class="z-20 flex items-center order-1 bg-surface-variant border-2 border-glass-border shadow-xl w-6 h-6 rounded-full absolute -left-[35px] md:relative md:left-auto md:mx-auto ring-4 ring-background">
+                    </div>
+                    <div class="order-1 glass-card rounded-xl p-md md:w-5/12 w-full text-left md:text-left opacity-80"
+                        data-aos="fade-up">
+                        <h3 class="font-title-md text-title-md font-bold text-on-surface" data-i18n="edu_elementary">
+                            Sekolah Dasar</h3>
+                        <p class="font-body-base text-body-base text-on-surface mt-xs">MI HIDAYATUL HASANAH</p>
+                        <p class="font-caption text-caption text-on-surface-muted mt-xs">2014 - 2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section class="scroll-mt-[120px]" id="experience">
+            <div class="flex items-center justify-center gap-sm mb-xl">
+                <span class="material-symbols-outlined text-secondary text-4xl"
+                    style="font-variation-settings: 'FILL' 1;">groups</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-on-surface text-center"
+                    data-i18n="experience_title">Pengalaman Organisasi</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-lg max-w-5xl mx-auto">
+                <div class="glass-card rounded-2xl p-xl flex items-start gap-md border-t-4 border-error hover:-translate-y-2 transition-transform duration-300 group"
+                    data-aos="fade-up">
+                    <div class="p-sm bg-error/10 rounded-lg group-hover:bg-error/20 transition-colors">
+                        <span class="material-symbols-outlined text-error text-4xl"
+                            style="font-variation-settings: 'FILL' 1;">medical_services</span>
+                    </div>
+                    <div class="flex flex-col gap-xs">
+                        <h3 class="font-headline-md text-headline-md font-bold text-on-surface"
+                            data-i18n="exp_pmr_title">PMR di sekolah</h3>
+                        <p class="font-body-base text-body-base text-on-surface-muted" data-i18n="exp_pmr_desc">Anggota
+                            Aktif Palang Merah Remaja</p>
+                    </div>
+                </div>
+                <div class="glass-card rounded-2xl p-xl flex items-start gap-md border-t-4 border-tertiary hover:-translate-y-2 transition-transform duration-300 group"
+                    data-aos="fade-up">
+                    <div class="p-sm bg-tertiary/10 rounded-lg group-hover:bg-tertiary/20 transition-colors">
+                        <span class="material-symbols-outlined text-tertiary text-4xl"
+                            style="font-variation-settings: 'FILL' 1;">terminal</span>
+                    </div>
+                    <div class="flex flex-col gap-xs">
+                        <h3 class="font-headline-md text-headline-md font-bold text-on-surface"
+                            data-i18n="exp_tjkt_title">Komunitas TJKT di sekolah</h3>
+                        <p class="font-body-base text-body-base text-on-surface-muted" data-i18n="exp_tjkt_desc">Anggota
+                            Komunitas Teknik Jaringan Komputer dan Telekomunikasi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Awards & Achievements -->
+        <section class="scroll-mt-[120px]" id="awards">
+            <div class="flex flex-col gap-lg items-center text-center mb-xl">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-on-surface" data-i18n="awards_title">
+                    Awards &amp; Achievements</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-md max-w-6xl mx-auto auto-rows-[300px]">
+                <!-- Certificate 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group md:col-span-7 row-span-1 relative flex flex-col justify-end"
+                    data-aos="zoom-in">
+                    <img alt="Juara 3 LKS Purworejo (Software)"
+                        class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 z-0"
+                        src="lks.jpeg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10 opacity-90">
+                    </div>
+                    <div class="relative z-20 p-xl w-full">
+                        <h3 class="text-2xl md:text-3xl font-bold text-primary mb-sm" data-i18n="award_lks_title">Juara
+                            3 LKS Purworejo (Software)</h3>
+                        <p class="font-body-base text-body-base text-on-surface-variant flex items-center gap-xs">
+                            <span class="material-symbols-outlined text-sm">emoji_events</span> <span
+                                data-i18n="award_lks_desc">Lomba Kompetensi Siswa</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group md:col-span-5 row-span-1 relative flex flex-col justify-end"
+                    data-aos="zoom-in">
+                    <img alt="Seminar International Edupreneurship Summit"
+                        class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 z-0"
+                        src="seminar.jpeg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10 opacity-90">
+                    </div>
+                    <div class="relative z-20 p-xl w-full">
+                        <h3 class="text-xl md:text-2xl font-bold text-secondary mb-sm">Seminar International
+                            Edupreneurship Summit</h3>
+                        <p class="font-body-base text-body-base text-on-surface-variant flex items-center gap-xs">
+                            <span class="material-symbols-outlined text-sm">workspace_premium</span> <span
+                                data-i18n="award_seminar_desc">Peserta Seminar</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest w-full py-xl border-t border-glass-border mt-section-gap relative z-10"
+        id="contact">
+        <div class="flex flex-col md:flex-row justify-between items-center px-gutter-desktop gap-md max-w-7xl mx-auto">
+            <div class="flex flex-col items-center md:items-start gap-xs">
+                <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase"
+                    data-i18n="full_name">Arif Rachman Afriantoro</span>
+                <p class="font-caption text-caption text-on-surface-muted">© 2024 <span data-i18n="full_name">Arif
+                        Rachman Afriantoro</span>. <span data-i18n="footer_tagline">Built for the modern
+                        architect.</span></p>
+            </div>
+            <div class="flex items-center gap-md">
+                <a class="flex items-center gap-sm text-on-surface-muted hover:text-primary transition-all hover:translate-y-[-2px] duration-300 group"
+                    href="mailto:arifrachmanafriantoro17@gmail.com">
+                    <span class="material-symbols-outlined text-xl group-hover:text-primary transition-colors"
+                        style="font-variation-settings: 'FILL' 1;">mail</span>
+                    <span class="font-caption text-caption">bangrip961@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Simple script to handle active navigation state based on scroll position
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav .md\\:flex a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+                    link.classList.add('text-on-surface-variant', 'font-medium');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.remove('text-on-surface-variant', 'font-medium');
+                        link.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Language Switcher (ID / EN / JP) -->
+    <script>
+        (function () {
+            var translations = {
+                id: {
+                    page_title: 'Arif Rachman Afriantoro - Portfolio',
+                    full_name: 'Arif Rachman Afriantoro',
+                    nav_home: 'Beranda',
+                    nav_about: 'Tentang',
+                    nav_skills: 'Keahlian',
+                    nav_experience: 'Pengalaman',
+                    nav_education: 'Pendidikan',
+                    nav_awards: 'Penghargaan',
+                    hero_greeting: 'Hallo, saya',
+                    hero_cta_primary: 'Hubungi Saya',
+                    hero_cta_secondary: 'Selengkapnya',
+                    about_title: 'Latar Belakang',
+                    about_text: 'Seorang siswa SMK yang memiliki ketertarikan besar pada dunia teknologi digital, dan inovasi teknologi. Saya senang mengeksplorasi bagaimana teknologi dapat diterapkan untuk menyelesaikan masalah nyata dan menciptakan solusi yang bermanfaat. Saat ini, saya terus belajar dan mengembangkan diri di bidang programer dan dunia digital secasra lebih luas.',
+                    skills_title: 'Keahlian & Kompetensi',
+                    softskills_title: 'Soft Skills',
+                    softskill_1: 'Komunikasi',
+                    softskill_2: 'Team Work',
+                    softskill_3: 'Manajemen Waktu',
+                    softskill_4: 'Problem Solving',
+                    hardskills_title: 'Keahlian',
+                    skill_graphic_design: 'Desain Grafis',
+                    education_title: 'Riwayat Pendidikan',
+                    edu_vocational: 'Sekolah Menengah Kejuruan',
+                    edu_junior_high: 'Sekolah Menengah Pertama',
+                    edu_elementary: 'Sekolah Dasar',
+                    experience_title: 'Pengalaman Organisasi',
+                    exp_pmr_title: 'PMR di sekolah',
+                    exp_pmr_desc: 'Anggota Aktif Palang Merah Remaja',
+                    exp_tjkt_title: 'Komunitas TJKT di sekolah',
+                    exp_tjkt_desc: 'Anggota Komunitas Teknik Jaringan Komputer dan Telekomunikasi',
+                    awards_title: 'Penghargaan & Prestasi',
+                    award_lks_title: 'Juara 3 LKS Purworejo (Software)',
+                    award_lks_desc: 'Lomba Kompetensi Siswa',
+                    award_seminar_desc: 'Peserta Seminar',
+                    footer_tagline: 'Dibuat untuk arsitek modern.'
+                },
+                en: {
+                    page_title: 'Arif Rachman Afriantoro - Portfolio',
+                    full_name: 'Arif Rachman Afriantoro',
+                    nav_home: 'Home',
+                    nav_about: 'About',
+                    nav_skills: 'Skills',
+                    nav_experience: 'Experience',
+                    nav_education: 'Education',
+                    nav_awards: 'Awards',
+                    hero_greeting: 'Hello, I\'m',
+                    hero_cta_primary: 'Get In Touch',
+                    hero_cta_secondary: 'Learn More',
+                    about_title: 'Background',
+                    about_text: 'I am a vocational high school student with a strong interest in digital technology and technological innovation. I enjoy exploring how technology can be applied to solve real-world problems and create beneficial solutions. Currently, I am continuously learning and developing my skills in programming and the broader digital landscape.',
+                    skills_title: 'Skills & Expertise',
+                    softskills_title: 'Soft Skills',
+                    softskill_1: 'Communication',
+                    softskill_2: 'Teamwork',
+                    softskill_3: 'Time Management',
+                    softskill_4: 'Problem Solving',
+                    hardskills_title: 'Technical Skills',
+                    skill_graphic_design: 'Graphic Design',
+                    education_title: 'Education History',
+                    edu_vocational: 'Vocational High School',
+                    edu_junior_high: 'Junior High School',
+                    edu_elementary: 'Elementary School',
+                    experience_title: 'Organizational Experience',
+                    exp_pmr_title: 'PMR at School',
+                    exp_pmr_desc: 'Active Member of the Youth Red Cross',
+                    exp_tjkt_title: 'TJKT Community at School',
+                    exp_tjkt_desc: 'Member of the Computer Network & Telecommunications Engineering Community',
+                    awards_title: 'Awards & Achievements',
+                    award_lks_title: '3rd Place - LKS Purworejo (Software)',
+                    award_lks_desc: 'Student Skills Competition',
+                    award_seminar_desc: 'Seminar Participant',
+                    footer_tagline: 'Built for the modern architect.'
+                },
+                jp: {
+                    page_title: 'アリフ・ラフマン・アフリアントロ - ポートフォリオ',
+                    full_name: 'アリフ・ラフマン・アフリアントロ',
+                    nav_home: 'ホーム',
+                    nav_about: '概要',
+                    nav_skills: 'スキル',
+                    nav_experience: '経験',
+                    nav_education: '学歴',
+                    nav_awards: '受賞歴',
+                    hero_greeting: 'こんにちは、私は',
+                    hero_cta_primary: '連絡する',
+                    hero_cta_secondary: '詳しく見る',
+                    about_title: 'プロフィール',
+                    about_text: '私はデジタル技術や技術革新に強い関心を持つ、職業高校の生徒です。技術を活用して現実世界の課題を解決し、有益なソリューションを生み出す方法を探求することにやりがいを感じています。現在は、プログラミングやデジタル技術全般​​に関する知識・スキルの習得と向上に日々励んでいます。',
+                    skills_title: 'スキル＆専門知識',
+                    softskills_title: 'ソフトスキル',
+                    softskill_1: 'コミュニケーション',
+                    softskill_2: 'チームワーク',
+                    softskill_3: '時間管理',
+                    softskill_4: '問題解決',
+                    hardskills_title: '技術スキル',
+                    skill_graphic_design: 'グラフィックデザイン',
+                    education_title: '学歴',
+                    edu_vocational: '職業高等学校',
+                    edu_junior_high: '中学校',
+                    edu_elementary: '小学校',
+                    experience_title: '組織活動経験',
+                    exp_pmr_title: '学校のPMR',
+                    exp_pmr_desc: '青年赤十字団の活動メンバー',
+                    exp_tjkt_title: '学校のTJKTコミュニティ',
+                    exp_tjkt_desc: 'コンピューターネットワーク・通信工学コミュニティのメンバー',
+                    awards_title: '受賞歴・実績',
+                    award_lks_title: 'LKS Purworejo（ソフトウェア部門）第3位',
+                    award_lks_desc: '生徒技能競技会（LKS）',
+                    award_seminar_desc: 'セミナー参加者',
+                    footer_tagline: '現代の建築家のために作られました。'
+                }
+            };
+
+            var currentLang = 'id';
+            var htmlRoot = document.documentElement;
+            var langBtn = document.getElementById('lang-btn');
+            var langBtnLabel = document.getElementById('lang-btn-label');
+            var langMenu = document.getElementById('lang-menu');
+            var langChevron = document.getElementById('lang-chevron');
+            var langOptions = langMenu.querySelectorAll('[data-lang]');
+            var i18nElements = document.querySelectorAll('[data-i18n]');
+
+            function applyLanguage(lang) {
+                if (!translations[lang]) return;
+                currentLang = lang;
+
+                i18nElements.forEach(function (el) {
+                    var key = el.getAttribute('data-i18n');
+                    if (translations[lang][key] !== undefined) {
+                        el.textContent = translations[lang][key];
+                    }
+                });
+
+                if (translations[lang].page_title) {
+                    document.title = translations[lang].page_title;
+                }
+
+                langBtnLabel.textContent = lang.toUpperCase();
+                htmlRoot.setAttribute('lang', lang === 'jp' ? 'ja' : lang);
+
+                langOptions.forEach(function (opt) {
+                    var isActive = opt.getAttribute('data-lang') === lang;
+                    opt.classList.toggle('text-primary', isActive);
+                    opt.classList.toggle('font-bold', isActive);
+                    opt.classList.toggle('text-on-surface-variant', !isActive);
+                });
+            }
+
+            function closeMenu() {
+                langMenu.classList.add('hidden');
+                langBtn.setAttribute('aria-expanded', 'false');
+                langChevron.classList.remove('rotate-180');
+            }
+
+            langBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var willOpen = langMenu.classList.contains('hidden');
+                langMenu.classList.toggle('hidden');
+                langBtn.setAttribute('aria-expanded', String(willOpen));
+                langChevron.classList.toggle('rotate-180', willOpen);
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!langMenu.classList.contains('hidden') && !langMenu.contains(e.target)) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeMenu();
+            });
+
+            langOptions.forEach(function (btn) {
+                btn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    applyLanguage(btn.getAttribute('data-lang'));
+                    closeMenu();
+                });
+            });
+
+            // Set bahasa awal (default: Indonesia)
+            applyLanguage(currentLang);
+        })();
+    </script>
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 80
+        });
+    </script>
+</body>
+
+</html>
